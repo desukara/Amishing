@@ -6,6 +6,7 @@ if (menuToggle && navMenu) {
     navMenu.classList.toggle("active");
 
     const menuIsOpen = navMenu.classList.contains("active");
+
     menuToggle.setAttribute(
       "aria-label",
       menuIsOpen ? "Close navigation menu" : "Open navigation menu"
@@ -50,4 +51,21 @@ if (questionSearch && questionList) {
       }
     });
   });
+}
+
+const homepageSlideshow = document.getElementById("homepageSlideshow");
+
+if (homepageSlideshow) {
+  const slides = homepageSlideshow.querySelectorAll(".slide");
+  let currentSlide = 0;
+
+  if (slides.length > 1) {
+    setInterval(() => {
+      slides[currentSlide].classList.remove("active");
+
+      currentSlide = (currentSlide + 1) % slides.length;
+
+      slides[currentSlide].classList.add("active");
+    }, 4000);
+  }
 }
