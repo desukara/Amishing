@@ -46,17 +46,12 @@ body {
   font-family: "Libre Baskerville", Georgia, "Times New Roman", serif;
   line-height: 1.72;
   color: var(--ink);
-  background: radial-gradient(
-      circle at 12% 12%,
-      rgba(120, 35, 31, 0.08),
-      transparent 24%
-    ),
+  background:
+    radial-gradient(circle at 12% 12%, rgba(120, 35, 31, 0.08), transparent 24%),
     radial-gradient(circle at 85% 8%, rgba(38, 63, 95, 0.08), transparent 26%),
     radial-gradient(circle at 50% 92%, rgba(191, 135, 48, 0.1), transparent 28%),
-    linear-gradient(45deg, rgba(101, 69, 34, 0.055) 25%, transparent 25%) 0 0 /
-      28px 28px,
-    linear-gradient(-45deg, rgba(101, 69, 34, 0.04) 25%, transparent 25%) 0 14px /
-      28px 28px,
+    linear-gradient(45deg, rgba(101, 69, 34, 0.055) 25%, transparent 25%) 0 0 / 28px 28px,
+    linear-gradient(-45deg, rgba(101, 69, 34, 0.04) 25%, transparent 25%) 0 14px / 28px 28px,
     var(--paper);
 }
 
@@ -67,20 +62,9 @@ body::before {
   pointer-events: none;
   z-index: -1;
   opacity: 0.14;
-  background-image: linear-gradient(
-      45deg,
-      transparent 46%,
-      var(--line) 47%,
-      var(--line) 53%,
-      transparent 54%
-    ),
-    linear-gradient(
-      -45deg,
-      transparent 46%,
-      var(--line) 47%,
-      var(--line) 53%,
-      transparent 54%
-    );
+  background-image:
+    linear-gradient(45deg, transparent 46%, var(--line) 47%, var(--line) 53%, transparent 54%),
+    linear-gradient(-45deg, transparent 46%, var(--line) 47%, var(--line) 53%, transparent 54%);
   background-size: 96px 96px;
 }
 
@@ -91,13 +75,14 @@ body::after {
   pointer-events: none;
   z-index: -1;
   opacity: 0.18;
-  background: repeating-linear-gradient(
-    0deg,
-    rgba(31, 23, 17, 0.035) 0,
-    rgba(31, 23, 17, 0.035) 1px,
-    transparent 1px,
-    transparent 4px
-  );
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(31, 23, 17, 0.035) 0,
+      rgba(31, 23, 17, 0.035) 1px,
+      transparent 1px,
+      transparent 4px
+    );
 }
 
 a {
@@ -117,12 +102,8 @@ a {
 /* HEADER */
 
 .site-header {
-  background: linear-gradient(
-      90deg,
-      rgba(120, 35, 31, 0.45),
-      transparent 32%,
-      rgba(38, 63, 95, 0.38)
-    ),
+  background:
+    linear-gradient(90deg, rgba(120, 35, 31, 0.45), transparent 32%, rgba(38, 63, 95, 0.38)),
     var(--brown-dark);
   color: var(--cream);
   padding: 0.95rem 0;
@@ -138,17 +119,18 @@ a {
   display: block;
   height: 7px;
   margin-top: 0.9rem;
-  background: linear-gradient(
-    90deg,
-    var(--barn-red) 0 12.5%,
-    var(--indigo) 12.5% 25%,
-    var(--forest) 25% 37.5%,
-    var(--mustard) 37.5% 50%,
-    var(--barn-red-dark) 50% 62.5%,
-    var(--indigo-dark) 62.5% 75%,
-    var(--forest-dark) 75% 87.5%,
-    var(--mustard-soft) 87.5% 100%
-  );
+  background:
+    linear-gradient(
+      90deg,
+      var(--barn-red) 0 12.5%,
+      var(--indigo) 12.5% 25%,
+      var(--forest) 25% 37.5%,
+      var(--mustard) 37.5% 50%,
+      var(--barn-red-dark) 50% 62.5%,
+      var(--indigo-dark) 62.5% 75%,
+      var(--forest-dark) 75% 87.5%,
+      var(--mustard-soft) 87.5% 100%
+    );
 }
 
 .nav-container {
@@ -211,7 +193,8 @@ a {
 .hero {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(rgba(31, 23, 17, 0.8), rgba(31, 23, 17, 0.88)),
+  background:
+    linear-gradient(rgba(31, 23, 17, 0.8), rgba(31, 23, 17, 0.88)),
     url("logo.png");
   background-size: cover;
   background-position: center;
@@ -237,7 +220,8 @@ a {
   position: absolute;
   inset: 0;
   opacity: 0.17;
-  background: conic-gradient(
+  background:
+    conic-gradient(
       from 45deg,
       transparent 0 25%,
       var(--mustard) 25% 30%,
@@ -246,8 +230,7 @@ a {
       transparent 55% 75%,
       var(--indigo) 75% 80%,
       transparent 80%
-    )
-    0 0 / 110px 110px;
+    ) 0 0 / 110px 110px;
 }
 
 .hero-content {
@@ -331,7 +314,8 @@ h3 {
   background: var(--barn-red);
   color: var(--cream);
   border-color: var(--barn-red-dark);
-  box-shadow: inset 0 0 0 2px rgba(255, 248, 232, 0.18),
+  box-shadow:
+    inset 0 0 0 2px rgba(255, 248, 232, 0.18),
     0 8px 18px rgba(31, 23, 17, 0.24);
 }
 
@@ -350,19 +334,20 @@ h3 {
 /* SLIDESHOW */
 
 .slideshow-section {
-  background: linear-gradient(
-    90deg,
-    var(--barn-red-dark) 0 10%,
-    var(--indigo-dark) 10% 20%,
-    var(--forest-dark) 20% 30%,
-    var(--mustard) 30% 40%,
-    var(--brown-dark) 40% 50%,
-    var(--barn-red-dark) 50% 60%,
-    var(--indigo-dark) 60% 70%,
-    var(--forest-dark) 70% 80%,
-    var(--mustard-soft) 80% 90%,
-    var(--brown-dark) 90% 100%
-  );
+  background:
+    linear-gradient(
+      90deg,
+      var(--barn-red-dark) 0 10%,
+      var(--indigo-dark) 10% 20%,
+      var(--forest-dark) 20% 30%,
+      var(--mustard) 30% 40%,
+      var(--brown-dark) 40% 50%,
+      var(--barn-red-dark) 50% 60%,
+      var(--indigo-dark) 60% 70%,
+      var(--forest-dark) 70% 80%,
+      var(--mustard-soft) 80% 90%,
+      var(--brown-dark) 90% 100%
+    );
   padding: 1.5rem 0;
   border-bottom: 7px double var(--line-dark);
 }
@@ -432,29 +417,25 @@ h3 {
   height: 9px;
   width: min(1120px, 92%);
   margin: 0 auto 2.2rem;
-  background: linear-gradient(
-    90deg,
-    var(--barn-red) 0 12.5%,
-    var(--indigo) 12.5% 25%,
-    var(--forest) 25% 37.5%,
-    var(--mustard) 37.5% 50%,
-    var(--brown-dark) 50% 62.5%,
-    var(--mustard) 62.5% 75%,
-    var(--forest) 75% 87.5%,
-    var(--indigo) 87.5% 100%
-  );
+  background:
+    linear-gradient(
+      90deg,
+      var(--barn-red) 0 12.5%,
+      var(--indigo) 12.5% 25%,
+      var(--forest) 25% 37.5%,
+      var(--mustard) 37.5% 50%,
+      var(--brown-dark) 50% 62.5%,
+      var(--mustard) 62.5% 75%,
+      var(--forest) 75% 87.5%,
+      var(--indigo) 87.5% 100%
+    );
   border-top: 1px solid var(--line-dark);
   border-bottom: 1px solid var(--line-dark);
 }
 
 .intro {
-  background: linear-gradient(
-      90deg,
-      rgba(120, 35, 31, 0.08),
-      transparent 18%,
-      transparent 82%,
-      rgba(38, 63, 95, 0.08)
-    ),
+  background:
+    linear-gradient(90deg, rgba(120, 35, 31, 0.08), transparent 18%, transparent 82%, rgba(38, 63, 95, 0.08)),
     var(--cream);
   border-bottom: 1px solid var(--line);
 }
@@ -463,16 +444,13 @@ h3 {
 .values-section .narrow {
   position: relative;
   padding: clamp(1.6rem, 4vw, 2.35rem);
-  background: linear-gradient(
-      rgba(255, 248, 232, 0.88),
-      rgba(255, 248, 232, 0.88)
-    ),
-    linear-gradient(45deg, rgba(120, 35, 31, 0.09) 25%, transparent 25%) 0 0 /
-      36px 36px,
-    linear-gradient(-45deg, rgba(38, 63, 95, 0.08) 25%, transparent 25%) 0 18px /
-      36px 36px;
+  background:
+    linear-gradient(rgba(255, 248, 232, 0.88), rgba(255, 248, 232, 0.88)),
+    linear-gradient(45deg, rgba(120, 35, 31, 0.09) 25%, transparent 25%) 0 0 / 36px 36px,
+    linear-gradient(-45deg, rgba(38, 63, 95, 0.08) 25%, transparent 25%) 0 18px / 36px 36px;
   border: 2px solid var(--line-dark);
-  box-shadow: inset 0 0 0 7px rgba(191, 135, 48, 0.16),
+  box-shadow:
+    inset 0 0 0 7px rgba(191, 135, 48, 0.16),
     0 16px 34px var(--shadow-soft);
 }
 
@@ -504,14 +482,9 @@ h3 {
 /* HUB / QUILT CARDS */
 
 .hub-section {
-  background: linear-gradient(
-        45deg,
-        rgba(120, 35, 31, 0.08) 25%,
-        transparent 25%
-      )
-      0 0 / 52px 52px,
-    linear-gradient(-45deg, rgba(38, 63, 95, 0.075) 25%, transparent 25%) 0 26px /
-      52px 52px,
+  background:
+    linear-gradient(45deg, rgba(120, 35, 31, 0.08) 25%, transparent 25%) 0 0 / 52px 52px,
+    linear-gradient(-45deg, rgba(38, 63, 95, 0.075) 25%, transparent 25%) 0 26px / 52px 52px,
     var(--paper-warm);
   border-top: 8px solid var(--brown-dark);
   border-bottom: 8px solid var(--brown-dark);
@@ -530,16 +503,17 @@ h3 {
   width: min(460px, 100%);
   height: 10px;
   margin-top: 1.35rem;
-  background: linear-gradient(
-    90deg,
-    var(--barn-red) 0 14.28%,
-    var(--mustard) 14.28% 28.56%,
-    var(--indigo) 28.56% 42.84%,
-    var(--forest) 42.84% 57.12%,
-    var(--brown-dark) 57.12% 71.4%,
-    var(--mustard-soft) 71.4% 85.68%,
-    var(--barn-red-dark) 85.68% 100%
-  );
+  background:
+    linear-gradient(
+      90deg,
+      var(--barn-red) 0 14.28%,
+      var(--mustard) 14.28% 28.56%,
+      var(--indigo) 28.56% 42.84%,
+      var(--forest) 42.84% 57.12%,
+      var(--brown-dark) 57.12% 71.4%,
+      var(--mustard-soft) 71.4% 85.68%,
+      var(--barn-red-dark) 85.68% 100%
+    );
   border: 1px solid var(--line-dark);
 }
 
@@ -558,7 +532,8 @@ h3 {
   align-items: flex-end;
   background: var(--paper);
   border: 3px solid var(--brown-dark);
-  box-shadow: inset 0 0 0 6px rgba(255, 248, 232, 0.55),
+  box-shadow:
+    inset 0 0 0 6px rgba(255, 248, 232, 0.55),
     0 14px 28px rgba(31, 23, 17, 0.15);
   transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
 }
@@ -576,68 +551,46 @@ h3 {
 }
 
 .card:nth-child(1) {
-  background: linear-gradient(
-      rgba(255, 248, 232, 0.24),
-      rgba(255, 248, 232, 0.24)
-    ),
+  background:
+    linear-gradient(rgba(255, 248, 232, 0.24), rgba(255, 248, 232, 0.24)),
     linear-gradient(45deg, var(--barn-red) 25%, transparent 25%) 0 0 / 44px 44px,
-    linear-gradient(-45deg, var(--indigo) 25%, transparent 25%) 0 22px / 44px
-      44px,
+    linear-gradient(-45deg, var(--indigo) 25%, transparent 25%) 0 22px / 44px 44px,
     var(--paper);
 }
 
 .card:nth-child(2) {
-  background: linear-gradient(
-      rgba(255, 248, 232, 0.24),
-      rgba(255, 248, 232, 0.24)
-    ),
+  background:
+    linear-gradient(rgba(255, 248, 232, 0.24), rgba(255, 248, 232, 0.24)),
     linear-gradient(45deg, var(--forest) 25%, transparent 25%) 0 0 / 44px 44px,
-    linear-gradient(-45deg, var(--mustard) 25%, transparent 25%) 0 22px / 44px
-      44px,
+    linear-gradient(-45deg, var(--mustard) 25%, transparent 25%) 0 22px / 44px 44px,
     var(--paper);
 }
 
 .card:nth-child(3) {
-  background: linear-gradient(
-      rgba(255, 248, 232, 0.28),
-      rgba(255, 248, 232, 0.28)
-    ),
-    repeating-linear-gradient(
-      45deg,
-      var(--indigo) 0 10px,
-      transparent 10px 22px
-    ),
+  background:
+    linear-gradient(rgba(255, 248, 232, 0.28), rgba(255, 248, 232, 0.28)),
+    repeating-linear-gradient(45deg, var(--indigo) 0 10px, transparent 10px 22px),
     var(--paper);
 }
 
 .card:nth-child(4) {
-  background: linear-gradient(
-      rgba(255, 248, 232, 0.28),
-      rgba(255, 248, 232, 0.28)
-    ),
-    repeating-linear-gradient(
-      -45deg,
-      var(--barn-red) 0 9px,
-      transparent 9px 22px
-    ),
+  background:
+    linear-gradient(rgba(255, 248, 232, 0.28), rgba(255, 248, 232, 0.28)),
+    repeating-linear-gradient(-45deg, var(--barn-red) 0 9px, transparent 9px 22px),
     var(--paper);
 }
 
 .card:nth-child(5) {
-  background: linear-gradient(
-      rgba(255, 248, 232, 0.32),
-      rgba(255, 248, 232, 0.32)
-    ),
+  background:
+    linear-gradient(rgba(255, 248, 232, 0.32), rgba(255, 248, 232, 0.32)),
     linear-gradient(90deg, var(--forest) 0 12px, transparent 12px 32px),
     linear-gradient(0deg, var(--mustard) 0 12px, transparent 12px 32px),
     var(--paper);
 }
 
 .card:nth-child(6) {
-  background: linear-gradient(
-      rgba(255, 248, 232, 0.28),
-      rgba(255, 248, 232, 0.28)
-    ),
+  background:
+    linear-gradient(rgba(255, 248, 232, 0.28), rgba(255, 248, 232, 0.28)),
     conic-gradient(
       from 45deg,
       var(--barn-red),
@@ -667,7 +620,8 @@ h3 {
   right: 14px;
   width: 46px;
   height: 46px;
-  background: linear-gradient(45deg, var(--barn-red) 0 50%, transparent 50%),
+  background:
+    linear-gradient(45deg, var(--barn-red) 0 50%, transparent 50%),
     linear-gradient(-45deg, var(--indigo) 0 50%, transparent 50%),
     var(--mustard);
   border: 2px solid rgba(255, 248, 232, 0.75);
@@ -698,10 +652,8 @@ h3 {
 }
 
 .card h3:first-child {
-  background: linear-gradient(
-      rgba(255, 248, 232, 0.94),
-      rgba(255, 248, 232, 0.94)
-    ),
+  background:
+    linear-gradient(rgba(255, 248, 232, 0.94), rgba(255, 248, 232, 0.94)),
     var(--paper);
 }
 
@@ -735,7 +687,8 @@ h3 {
 .card:hover {
   transform: translateY(-4px);
   filter: saturate(1.08);
-  box-shadow: 0 18px 34px rgba(31, 23, 17, 0.24),
+  box-shadow:
+    0 18px 34px rgba(31, 23, 17, 0.24),
     inset 0 0 0 6px rgba(255, 248, 232, 0.68);
 }
 
@@ -747,15 +700,9 @@ h3 {
 /* QUESTIONS */
 
 .question-section {
-  background: linear-gradient(
-      rgba(255, 248, 232, 0.78),
-      rgba(255, 248, 232, 0.78)
-    ),
-    repeating-linear-gradient(
-      90deg,
-      rgba(120, 35, 31, 0.08) 0 2px,
-      transparent 2px 34px
-    ),
+  background:
+    linear-gradient(rgba(255, 248, 232, 0.78), rgba(255, 248, 232, 0.78)),
+    repeating-linear-gradient(90deg, rgba(120, 35, 31, 0.08) 0 2px, transparent 2px 34px),
     var(--paper);
 }
 
@@ -770,7 +717,8 @@ h3 {
   font-size: 1rem;
   background: var(--cream);
   color: var(--ink);
-  box-shadow: inset 0 0 0 4px rgba(185, 154, 98, 0.18),
+  box-shadow:
+    inset 0 0 0 4px rgba(185, 154, 98, 0.18),
     0 8px 18px rgba(31, 23, 17, 0.09);
 }
 
@@ -791,15 +739,14 @@ h3 {
 
 .question-list a {
   position: relative;
-  background: linear-gradient(
-      90deg,
-      rgba(255, 248, 232, 0.96),
-      rgba(255, 248, 232, 0.88)
-    ),
+  background:
+    linear-gradient(90deg, rgba(255, 248, 232, 0.96), rgba(255, 248, 232, 0.88)),
     var(--cream);
   padding: 1rem 1rem 1rem 1.3rem;
   border: 2px solid var(--line-dark);
-  box-shadow: inset 7px 0 0 var(--barn-red), 0 8px 18px rgba(31, 23, 17, 0.08);
+  box-shadow:
+    inset 7px 0 0 var(--barn-red),
+    0 8px 18px rgba(31, 23, 17, 0.08);
   font-size: 0.94rem;
   transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -816,11 +763,15 @@ h3 {
 }
 
 .question-list a:nth-child(3n + 2) {
-  box-shadow: inset 7px 0 0 var(--indigo), 0 8px 18px rgba(31, 23, 17, 0.08);
+  box-shadow:
+    inset 7px 0 0 var(--indigo),
+    0 8px 18px rgba(31, 23, 17, 0.08);
 }
 
 .question-list a:nth-child(3n + 3) {
-  box-shadow: inset 7px 0 0 var(--forest), 0 8px 18px rgba(31, 23, 17, 0.08);
+  box-shadow:
+    inset 7px 0 0 var(--forest),
+    0 8px 18px rgba(31, 23, 17, 0.08);
 }
 
 .question-list a:hover {
@@ -831,10 +782,10 @@ h3 {
 /* VALUES */
 
 .values-section {
-  background: linear-gradient(135deg, rgba(120, 35, 31, 0.38), transparent 34%),
+  background:
+    linear-gradient(135deg, rgba(120, 35, 31, 0.38), transparent 34%),
     linear-gradient(225deg, rgba(38, 63, 95, 0.34), transparent 36%),
-    linear-gradient(45deg, rgba(191, 135, 48, 0.1) 25%, transparent 25%) 0 0 /
-      48px 48px,
+    linear-gradient(45deg, rgba(191, 135, 48, 0.1) 25%, transparent 25%) 0 0 / 48px 48px,
     var(--brown-dark);
   color: var(--cream);
   border-top: 9px double var(--mustard-soft);
@@ -849,11 +800,12 @@ h3 {
 }
 
 .values-section .narrow {
-  background: linear-gradient(rgba(31, 23, 17, 0.72), rgba(31, 23, 17, 0.72)),
-    linear-gradient(45deg, rgba(191, 135, 48, 0.16) 25%, transparent 25%) 0 0 /
-      36px 36px;
+  background:
+    linear-gradient(rgba(31, 23, 17, 0.72), rgba(31, 23, 17, 0.72)),
+    linear-gradient(45deg, rgba(191, 135, 48, 0.16) 25%, transparent 25%) 0 0 / 36px 36px;
   border-color: var(--mustard-soft);
-  box-shadow: inset 0 0 0 7px rgba(255, 248, 232, 0.08),
+  box-shadow:
+    inset 0 0 0 7px rgba(255, 248, 232, 0.08),
     0 18px 40px rgba(0, 0, 0, 0.28);
 }
 
@@ -861,12 +813,13 @@ h3 {
 
 .site-footer {
   position: relative;
-  background: linear-gradient(
-    90deg,
-    var(--barn-red-dark) 0 14%,
-    var(--brown-dark) 14% 86%,
-    var(--indigo-dark) 86% 100%
-  );
+  background:
+    linear-gradient(
+      90deg,
+      var(--barn-red-dark) 0 14%,
+      var(--brown-dark) 14% 86%,
+      var(--indigo-dark) 86% 100%
+    );
   color: var(--cream);
   text-align: center;
   padding: 2.6rem 0;
@@ -880,17 +833,18 @@ h3 {
   height: 9px;
   width: min(1120px, 92%);
   margin: 0 auto 1.45rem;
-  background: linear-gradient(
-    90deg,
-    var(--barn-red) 0 12.5%,
-    var(--indigo) 12.5% 25%,
-    var(--forest) 25% 37.5%,
-    var(--mustard) 37.5% 50%,
-    var(--brown) 50% 62.5%,
-    var(--mustard-soft) 62.5% 75%,
-    var(--forest) 75% 87.5%,
-    var(--indigo) 87.5% 100%
-  );
+  background:
+    linear-gradient(
+      90deg,
+      var(--barn-red) 0 12.5%,
+      var(--indigo) 12.5% 25%,
+      var(--forest) 25% 37.5%,
+      var(--mustard) 37.5% 50%,
+      var(--brown) 50% 62.5%,
+      var(--mustard-soft) 62.5% 75%,
+      var(--forest) 75% 87.5%,
+      var(--indigo) 87.5% 100%
+    );
   border: 1px solid rgba(255, 248, 232, 0.35);
 }
 
